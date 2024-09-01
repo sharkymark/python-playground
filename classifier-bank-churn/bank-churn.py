@@ -78,6 +78,14 @@ def main():
         accuracy = accuracy_score(y_test, y_pred)
         print(f'\nModel accuracy on test data: {accuracy:.3f}\n')
 
+        # Get feature importances
+        feature_importances = model.feature_importances_
+
+        # Print feature importances
+        print("\nFeature Importances:\n")
+        for feature, importance in zip(train_features, feature_importances):
+            print(f"{feature}: {importance:.3f}")
+
         # Save the model and train features
         save_model(model, train_features, args.model_file)
         
@@ -126,8 +134,17 @@ def main():
         # Make predictions
         predictions = make_predictions(model, test_df)
         
-        print('Predicted Exited:', predictions[0])
-    
+        print('\nPredicted Exited (churn from bank):', predictions[0])
+        print()
+
+        # Get feature importances
+        feature_importances = model.feature_importances_
+
+        # Print feature importances
+        print("\nFeature Importances:\n")
+        for feature, importance in zip(train_features, feature_importances):
+            print(f"{feature}: {importance:.3f}")
+
         response = input('\nDo you want to predict for another customer? (y/n): ')
         if response.lower() != 'y':
             break
