@@ -11,5 +11,5 @@ COPY . /app
 RUN apt-get update && apt-get install -y procps ssh git net-tools htop
 
 # Install pip dependencies
-RUN pip install --no-cache-dir --upgrade pip && pip install websockets aioconsole
+RUN pip install --no-cache-dir --upgrade pip && pip install websockets aioconsole pandas scikit-learn argparse
 
