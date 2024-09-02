@@ -4,7 +4,16 @@ This is a simple SQL Injection example where the user input is not validated
 
 ## The app
 
-Start the app with `python3 customer.py` to create a SQLite3 database. Enter `%%` at the search prompt which will return all customer records including personally-identifiable data
+Start the app with `python3 customer.py` to create a SQLite3 database. After you enter a filter criteria, the app prints out the SQL statement. You can see how it's exploited using the attempts below.
+
+## Force SQL injection
+
+At the last name input prompt, enter:
+
+1. `%%`
+1. `'OR 1=1 --`
+1. `' UNION SELECT * FROM customers --`
+1. `' OR 1=1; DELETE FROM customers; --`
 
 ## Resources
 

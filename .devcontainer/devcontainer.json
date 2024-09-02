@@ -11,7 +11,8 @@
         "extensions": [
           "ms-python.python",
           "GitHub.copilot",
-          "ms-python.pylance"
+          "ms-python.pylance",
+          "ms-toolsai.jupyter"
         ],
         "settings": { 
           "terminal.integrated.shell.linux": "/bin/bash"
