@@ -32,7 +32,7 @@ python3 wine-quality-neural-net.py --train_dataset ./sets/train_wine_quality_whi
 
 [UCI dataset repository](https://archive.ics.uci.edu/dataset/186/wine+quality)
 
-[One Hot Encoding](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html)
+[Keras](https://keras.io/)
 
 [scikit-learn](https://scikit-learn.org/stable/index.html)
 
