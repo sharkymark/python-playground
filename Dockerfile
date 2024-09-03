@@ -8,8 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # get utilities in the container
-RUN apt-get update && apt-get install -y procps ssh git net-tools htop build-essential libsqlite3-dev
+RUN apt-get update && apt-get install -y procps ssh git net-tools htop build-essential libsqlite3-dev pkg-config libhdf5-dev
 
 # Install pip dependencies
-RUN pip install --no-cache-dir --upgrade pip && pip install websockets aioconsole pandas scikit-learn argparse pysqlite3 jupyterlab ipykernel
-
+RUN pip install --no-cache-dir --upgrade pip && pip install websockets aioconsole pandas scikit-learn argparse pysqlite3 jupyterlab ipykernel tensorflow

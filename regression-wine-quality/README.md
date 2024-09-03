@@ -21,6 +21,13 @@ python3 wine-quality.py --train_dataset ./sets/train_wine_quality_red.csv --mode
 python3 wine-quality.py --train_dataset ./sets/train_wine_quality_white.csv --model_file wine_quality_white.pkl
 ```
 
+If you want to use the neutral network program:
+
+```sh
+python3 wine-quality-neural-net.py --train_dataset ./sets/train_wine_quality_red.csv --model_file wine_quality_red-neural-net.keras
+python3 wine-quality-neural-net.py --train_dataset ./sets/train_wine_quality_white.csv --model_file wine_quality_white_neural_net.keras
+```
+
 ## Resources
 
 [UCI dataset repository](https://archive.ics.uci.edu/dataset/186/wine+quality)
