@@ -2,6 +2,13 @@
 
 This is a place to tinker with concepts and Python since it's quick and easy to stitch stuff together
 
+## Dev container
+This project includes a [dev container](https://containers.dev/) configuration for a consistent development environment. The dev container is based on the [Python  image](https://hub.docker.com/_/python) and includes the following features:
+- Python 3.13+
+- AI coding agents: Aider and Goose
+- VS Code extensions for Python, Pylance, Jupyter, Continue, and GitHub Copilot
+- requirements.txt for Python dependencies
+
 ## Resources
 
 [Python Mac versions](https://www.python.org/downloads/macos/)

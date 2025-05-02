@@ -1,0 +1,9 @@
+websockets
+aioconsole
+pandas
+scikit-learn
+argparse
+pysqlite3
+jupyterlab
+ipykernel
+tensorflow
